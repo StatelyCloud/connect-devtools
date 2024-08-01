@@ -1,0 +1,38 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@bufbuild/protobuf':
+    specifier: ^2.0.0
+    version: 2.0.0
+  '@connectrpc/connect':
+    specifier: 2.0.0-alpha.1
+    version: 2.0.0-alpha.1(@bufbuild/protobuf@2.0.0)
+
+devDependencies:
+  typescript:
+    specifier: ^5.5.4
+    version: 5.5.4
+
+packages:
+
+  /@bufbuild/protobuf@2.0.0:
+    resolution: {integrity: sha512-sw2JhwJyvyL0zlhG61aDzOVryEfJg2PDZFSV7i7IdC7nAE41WuXCru3QWLGiP87At0BMzKOoKO/FqEGoKygGZQ==}
+    dev: false
+
+  /@connectrpc/connect@2.0.0-alpha.1(@bufbuild/protobuf@2.0.0):
+    resolution: {integrity: sha512-eAjezEy1m+7bDtWt/TeXY2qIayq7R+WW8Jqwq3p8Q7ZTHpFJu0SBQivhRGQbNXSYR+QmqMk+j/FLAVlgB6CfHA==}
+    peerDependencies:
+      '@bufbuild/protobuf': ^2.0.0-beta.2
+    dependencies:
+      '@bufbuild/protobuf': 2.0.0
+    dev: false
+
+  /typescript@5.5.4:
+    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true

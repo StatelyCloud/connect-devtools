@@ -1,0 +1,46 @@
+{
+  "name": "connect-devtools",
+  "version": "1.0.0",
+  "description": "A Connect interceptor to enable viewing requests in gRPC-Web Devtools.",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "tsc",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StatelyCloud/connect-devtools.git"
+  },
+  "keywords": [
+    "connectrpc",
+    "grpc-web"
+  ],
+  "author": "Benjamin Hollis <hollis@stately.cloud>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StatelyCloud/connect-devtools/issues"
+  },
+  "homepage": "https://github.com/StatelyCloud/connect-devtools#readme",
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.0.0",
+    "@connectrpc/connect": "2.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
