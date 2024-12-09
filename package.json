@@ -37,10 +37,10 @@
   },
   "homepage": "https://github.com/StatelyCloud/connect-devtools#readme",
   "dependencies": {
-    "@bufbuild/protobuf": "^2.0.0",
-    "@connectrpc/connect": "2.0.0-alpha.1"
+    "@bufbuild/protobuf": "^2.2.0",
+    "@connectrpc/connect": "2.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.5.4"
+    "typescript": "^5.7.2"
   }
 }
